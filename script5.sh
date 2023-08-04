@@ -1,5 +1,5 @@
 #!/bin/bash
-var1=11
+var1=12
 while [ $var1 -gt 0 ]
 do
 	echo $var1
