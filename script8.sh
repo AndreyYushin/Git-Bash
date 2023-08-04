@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Wow"
 IFS=:
 for FOLDER in $PATH
 do
