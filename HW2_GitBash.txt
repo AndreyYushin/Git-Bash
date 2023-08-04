@@ -1,5 +1,5 @@
 GitHub. HW_2
-1. На локальном репозитории сделать ветки для:
+1. На локальном репозитории сделать ветки для: -git checkout -b <name branch> - позволяет создать новую ветку и сразу перейти в неё.
 - Postman
 - Jmeter
 - CheckLists
@@ -8,12 +8,12 @@ GitHub. HW_2
 - Charles
 - Mobile testing
 
-2. Запушить все ветки на внешний репозиторий
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
-4. Запушить структуру багрепорта на внешний репозиторий
-5. Вмержить ветку Bag Reports в Main
-6. Запушить main на внешний репозиторий.
-7. В ветке CheckLists набросать структуру чек листа.
-8. Запушить структуру на внешний репозиторий
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-10. Синхронизировать Внешнюю и Локальную ветки Main
+2. Запушить все ветки на внешний репозиторий - git add . , git status, git commit , git push origin <name branch>. 
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта - git checkout BugReports, vim BugReports.txt.
+4. Запушить структуру багрепорта на внешний репозиторий - git add BugReports, git status, git commit -m "Structure", git push. 
+5. Вмержить ветку Bug Reports в Main - git checkout main, git branch, git merge BugReports.
+6. Запушить main на внешний репозиторий - git add ., git commit, git push.
+7. В ветке CheckLists набросать структуру чек листа - git checkout CheckLists, vim CheckList.txt.
+8. Запушить структуру на внешний репозиторий - git add CheckList.txt, git status, git commit -m "Structure"
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main - выполнено.
+10. Синхронизировать Внешнюю и Локальную ветки Main - чтобы подтянуть все изменения с внешней ветки main в терминале пишем git fetch, git pull, а чтобы подтянуть все изменения в локальную ветку main пишем в терминале git add ., git status, git commit, git push. 
