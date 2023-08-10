@@ -15,36 +15,20 @@
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3” - cat >> tf_2.txt нажать enter ввести "the sec 3" нажать enter чтобы перейти в пустую строку и затем нажать ctrl+c.
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2” - cat >> tf_3.txt нажать enter ввести "the SeCoNd 2" нажать enter чтобы перейти в пустую строку и затем нажать сtrl+c.
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2” - cat >> tf_2.txt нажать на enter ввести "the seConD 2" нажать enter чтобы перейти в пустую строку и затем нажать ctrl+c.
- 14. Сделать текстовый файл tf_4.txt в котором будет 15 строк - cat > tf_4.txt 
--Nick
--Petr
--Alex
--Roy
--Jhon
--David
--Sonia
--Sussuna
--Billy
--Willy
--Eva
--Tom
--Harry
--Grey
--Lipa
- 15. Сделать текстовый файл tF_5.txt в котором будет 13 строк - cat > tf_5.txt 
--Mikky
--Artem
--Eric
--Rock
--Polly
--Greg
--Nikolas
--Azir
--Iren
--Holly
--Poull
--Lord
--Mark
+ 14. Сделать текстовый файл tf_4.txt в котором будет 15 строк - 
+#!/bin/bash
+file="tF_5.txt"
+for var in $(cat $file)
+do
+echo " $var"
+done >> testX.txt 
+ 15. Сделать текстовый файл tF_5.txt в котором будет 13 строк -  
+#!/bin/bash
+file="tF_4.txt"
+for var in $(cat $file)
+do
+echo " $var"
+done >> testX2.txt
  16. Вывести список всех файлов в папке - ls -l
  17. Выйти из папки inner_dir_1 - cd ..
  18. Вывести содержимое файла tf_3.txt в терминал - cat, less tf_3.txt
